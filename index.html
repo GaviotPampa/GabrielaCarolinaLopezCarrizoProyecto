@@ -23,27 +23,32 @@
    </div>
     <!-- logo/Home -->
      <img  id="logo-home" src= "img/faviconII200x100px.png" alt="BE">
-     <ul class="nav-menu-color-primary" >
-      <li >
-       <a class="fondo" href="pages/items/buscar.html">Buscar</a> 
-      </li>
-      <li>
-       <a class="fondo" href="pages/items/iniciarsesion.html">Iniciar Sesión</a> 
-      </li>
-      <li>
-       <a class="fondo" href="pages/items/micarrito.html">Mi Carrito</a> 
-      </li>
-     </ul>
-    </div>
+     <div>
+      <ul class="nav-menu-color-primary" >
+        <li >
+         <a class="fondo" href="pages/items/buscar.html">Buscar</a> 
+        </li>
+        <li>
+         <a class="fondo" href="pages/items/iniciarsesion.html">Iniciar Sesión</a> 
+        </li>
+        <li>
+         <a class="fondo" href="pages/items/micarrito.html">Mi Carrito</a> 
+        </li>
+       </ul>
+     </div>
+     
   </header>
    <div>
-    <nav id="nav"  class="nav">
-     <input type= "checkbox" id= "burger">
-     <label for="burger">☰</label>
-     <!-- Listas y links de Navegación -->
-     <ul class="nav-menu">
-      <li class="link">
-       <a class="link"  href="pages/newin.html">NEW IN</a>
+   <nav id="nav"  class="nav">
+    <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
+    <label for="abrir-cerrar" class="toggle-button">
+     <span class="cerrar" title="Cerrar">Cerrar</span>
+     <span class="abrir" title="Abrir">Abrir</span>
+    </label>
+    <!-- Listas y links de Navegación -->
+    <ul class="nav-menu">
+     <li class="link">
+      <a class="link"  href="pages/newin.html">NEW IN</a>
       </li>
       <li>
        <a class="link olor-primary" href="pages/coleccion.html">COLECCION </a>
@@ -129,7 +134,7 @@
   <footer>
     <h3>SUSCRIBITE A NUESTRO NEWSLETTER</h3>
     <form action="">
-     <div>
+     <div id="contacto-home">
       <label for="">ESCRIBI TU E-MAIL</label>
      </div> 
      <div>
