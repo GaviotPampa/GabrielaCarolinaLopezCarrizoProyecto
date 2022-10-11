@@ -144,6 +144,8 @@ h3 {
 
 body{
     padding-top: 200px; 
+    text-align: center;
+    display: grid;
 }
 
 .pagina-principal {
@@ -206,7 +208,101 @@ body{
 .fotos-cuadradas-5{
     width: 300px;
     height: 500px;
-   }
+}
+.textolook{
+    text-align: center;
+}
+div img .fotos-altas{
+    width: 100em;
+    height: 500em;
+}
+
+.fotos-cuadradas {
+    width: 200px;
+    height: 200px;
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+.fotos-cuadradas1{
+    width: 500px;
+    height: 400px;
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+.fotos-cuadradas11{
+    width: 400px;
+    height: 400px;
+    padding-top: 3em;
+    padding-right: 3em;
+    padding-left: 3em;
+    padding-bottom: 3em;
+    margin-right: 3em;
+}
+.fotos-cuadradas12{
+    max-width: 500px;  
+    height: 600px;
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+.fotos-cuadradas13{
+    width: 1000px;
+    height: 500px;
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+.zoom {
+    transition: transform .1s; 
+}
+     
+.zoom:hover {
+    transform: scale(1.5); 
+}
+.fotos-beauty{
+    width: 300px;
+    height: 300px;
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+.fotos-beauty1{
+    width: 700px;
+    height: 800px;
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+
+}
+.imagen:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+.efecto:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #010002;
+    -webkit-box-shadow: 0px 0px 15px 15px #a26ccc;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+ }
+ .rotar:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
 .pagina-principal-imagen-texto {
     display: flex;
     justify-content: center;
@@ -275,7 +371,7 @@ td{
 .new-in{
     margin-top: 1em;
     margin-bottom: 1em;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 footer {
