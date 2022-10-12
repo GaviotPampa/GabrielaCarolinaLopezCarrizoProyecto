@@ -17,17 +17,17 @@
 #header {
     background: white;
     height: 150px;
-    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
-    left: 0; /* Posicionamos la cabecera al lado izquierdo */
-    top: 0; /* Posicionamos la cabecera pegada arriba */
-    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    width: 100%; 
+    left: 0; 
+    top: 0; 
+    position: fixed; 
 }
 
 #nav {
     height: 80px;
-    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
-    left: 0; /* Posicionamos la cabecera al lado izquierdo */
-    top: 75px; /* Posicionamos la cabecera pegada arriba */
+    width: 100%; 
+    left: 0; 
+    top: 75px; 
     position: fixed; 
 }
 
@@ -49,7 +49,6 @@ b {
     animation-name: slidein;
     animation-iteration-count: 2, 1;
     animation-direction: alternate;
-
 }
     
 @keyframes slidein {
@@ -164,40 +163,72 @@ body{
     margin: 0 auto;
     display: grid;
     gap: 1rem;
+    width: 100%;
+    justify-content: center;
 }
-
-
 .fotos1{
-    width: 800px;
-    height: 900px;
-    padding-top: 70px;
+    width: 650px;
+    height: 650px; 
+    margin-right: 3em;
 }
+
 .fotos1-altas{
-    width: 320px;
+    width: 300px;
     height: 450px;
-    padding-top: 0px;
-    padding-bottom: 50px;
+    margin-bottom: 20em;
+    margin-right: 3em;
+    margin-left:3em ;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+}  
+.fotos1-altas-2{
+    width: 300px;
+    height: 450px;
+    margin-bottom: 20em;
+    margin-right: 3em;
+    margin-left:3em ;
+    padding-bottom: 1em;
     padding-left: 1em;
 }  
-
 .fotos1{
    grid-column: 1/3;
    grid-row: 1 / 3;
+
 }
 .fotos1-altas{
     grid-column: 3/3;
     grid-row: 1/3;
 }
 .fotos1-alargadas{
-    width: 600px;
-    height: 400px;
-    grid-column:3;
+    width: 800px;
+    height: 500px;
+    grid-column:3/3;
     grid-row: 2;
+    margin-bottom: 20em;
+    margin-right: 3em;
+    margin-left:3em ;
+    padding-bottom: 1em;
+    padding-left: 1em;
 }
 .fotos-cuadradas2{
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 450px;
+    margin-bottom: 20em;
+    margin-right: 3em;
+    margin-left:3em ;
+    padding-bottom: 1em;
+    padding-left: 1em;
 }
+.fotos-cuadradas3{
+    width: 850px;
+    height: 550px;
+    margin-bottom: 20em;
+    margin-right: 1em;
+    margin-left:3em ;
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+
 .fotoscoleccion5{
     display: flex;
     flex-wrap: wrap;
@@ -220,7 +251,7 @@ div img .fotos-altas{
 .fotos-cuadradas {
     width: 200px;
     height: 200px;
-    margin-top: 2em;
+    margin-top: 1em;
     margin-right: 2em;
     margin-left: 2em;
     margin-bottom: 2em;
@@ -233,6 +264,7 @@ div img .fotos-altas{
     margin-left: 2em;
     margin-bottom: 2em;
 }
+
 .fotos-cuadradas11{
     width: 400px;
     height: 400px;
@@ -243,7 +275,7 @@ div img .fotos-altas{
     margin-right: 3em;
 }
 .fotos-cuadradas12{
-    max-width: 500px;  
+    width: 400px;  
     height: 600px;
     margin-top: 2em;
     margin-right: 2em;
@@ -251,15 +283,13 @@ div img .fotos-altas{
     margin-bottom: 2em;
 }
 .fotos-cuadradas13{
-    width: 1000px;
-    height: 500px;
     margin-top: 2em;
     margin-right: 2em;
     margin-left: 2em;
     margin-bottom: 2em;
 }
 .zoom {
-    transition: transform .1s; 
+    transition: transform .2s; 
 }
      
 .zoom:hover {
@@ -274,8 +304,8 @@ div img .fotos-altas{
     margin-bottom: 2em;
 }
 .fotos-beauty1{
-    width: 700px;
-    height: 800px;
+    width: 400px;
+    height: 500px;
     margin-top: 2em;
     margin-right: 2em;
     margin-left: 2em;
@@ -292,7 +322,7 @@ div img .fotos-altas{
     border-radius:50%;
     -webkit-border-radius:50%;
     box-shadow: 0px 0px 15px 15px #010002;
-    -webkit-box-shadow: 0px 0px 15px 15px #a26ccc;
+    -webkit-box-shadow: 0px 0px 15px 15px #cdc7d1;
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
  }
@@ -343,7 +373,6 @@ div img .fotos-altas{
     color: #000000;
 }
 
-
 table {
     border: #8f0ca3d9 2px solid;
 }
@@ -377,22 +406,21 @@ td{
 footer {
     text-align: center;
 }
+
 .socialmedia{
     width: 32px;
     height: 32px;
     font-size: 34px;
  }
+
  iframe {
     border-width: 2px;
-    border-style: inset;
     border-color: initial;
-    border-image: initial;
-    height: 100%;
-    left: 0;
-    top: 50;
-    width: 100%;
+    border-image: initial; 
+    height: 800px;
+    width: 900px; 
     box-sizing: border-box;
-    justify-content: flex-end;
+    justify-content: flex-end; 
 }
 
 .promolooks .fotos-promo{
@@ -404,8 +432,8 @@ footer {
 }
 
 .pagina-principal .promolooks {
-display: flex;
-justify-content: center;
+    display: flex;
+   justify-content: center;
 }
 
 .fotos-altas {
@@ -432,10 +460,6 @@ justify-content: center;
     padding-bottom: 20px;
 }
 
-ul{
-    display: none;
-}
-
 input:checked  ~ ul{
     display:block;
 }
@@ -444,18 +468,9 @@ input {
 } 
   
 label {
-   /*  display: inline-block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-weight: bold;
-    text-align: center;
-    user-select: none; */
     margin-left: 1em;
   }
 
-
-/* menu burger */
 input#abrir-cerrar { 
     visibility:hidden;
     position: absolute;
@@ -538,4 +553,7 @@ input#abrir-cerrar:checked + .toggle-button .cerrar {
 .pagina-principal {
     width: 100%;
 }
-
+@media screen {
+    
+}
+ 
