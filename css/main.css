@@ -20,8 +20,7 @@
     width: 100%; 
     left: 0; 
     top: 0; 
-    margin: 20px 0;
-    position: fixed; 
+   position: fixed; 
 }
 .main{
     width: 70%;
@@ -566,28 +565,4 @@ input#abrir-cerrar:checked + .toggle-button .cerrar {
     width: 100%;
 }
 
-.contenedor {
-   max-width: 100px; 
-    margin: 0 auto;
-    overflow: hidden;
-}
-@media screen and (max-width: 800px) {
-  
-}  
-   
-@media (min-width: 576px) {   body {
-    background-color: #f9f8fa;
-}}
 
-@media (min-width: 768px) {  body {
-    background-color: white;
-}
-
-@media (min-width: 992px) {  body {
-    background-color: white; }
-
-@media (min-width: 1200px) {  body {
-    background-color: white; }
-
-@media (min-width: 1400px) { body {
-    background-color: white;}
