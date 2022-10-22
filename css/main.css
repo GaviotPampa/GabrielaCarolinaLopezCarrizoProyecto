@@ -24,9 +24,10 @@ body{
     display: grid;
 
 }
+
 .pagina-principal {
     text-align: center;
-    
+ 
 }
 .color-primary {
     color: #000000;
@@ -101,19 +102,12 @@ b {
     padding-left: 0px;
 }
 
-/* nav ul { 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-
-} */
 nav ul {
     list-style-type: none;
     font: 1em garamond;
     font-weight: bolder;
     text-align: center;
-    background-color: #aa6fe6;
+    background-color: hsl(270, 70%, 67%);
     width: 100%;
     padding: 0.625em;
     background-position: 1px;
@@ -135,15 +129,7 @@ ul li {
 .main {
     min-height: 100vh;
 }
-/* .main{
-    width: 70%;
-    margin: 200px;
-    padding-top: 200px;
-    padding: 20px;
-   /*  background-color: #b47bca; */
-    float: left;
-    box-sizing: border-box;
-} 
+
 main div p {
     text-align: center;
     padding-bottom:0.625em ;
@@ -204,8 +190,15 @@ iframe {
     width: 100%;
     justify-content: center;
 }
-
 /* imagenes de index */
+.textolook{
+    display: flex;
+    justify-content: center;
+}
+.fotoshome {
+    object-position:10px ;
+
+}
 .fotos-altas {
     padding-right: 20px;
     padding-left: 10px;
@@ -215,6 +208,8 @@ iframe {
     width: 220px;
     height: 350px;
 }
+
+
 div img .fotos-altas{
     width: 100em;
     height: 500em;
@@ -251,13 +246,28 @@ td{
     margin: 0.5rem;
     margin-top: 50px;
     margin-right: auto;
+   
 }
 .pagina-principal .promolooks {
     display: flex;
    justify-content: center;
 }
 /* imagenes de  new in*/
+.new-in{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
 /* imagenes de  coleccion*/
+.fotoscoleccion {
+    width: 100%;
+    height: 500px;;
+}
+.fotoscoleccion5{
+    width: 100%;
+    height: 300px;
+}
+
 /* imagenes de  beauty*/
 .fotos-beauty{
     width: 18.75em;
@@ -266,7 +276,7 @@ td{
     margin-right: 2em;
     margin-left: 2em;
     margin-bottom: 2em;
-    object-fit: cover.
+    object-fit: cover;
 }
 .fotos-beauty1{
     width: 25em;
@@ -275,7 +285,7 @@ td{
     margin-right: 2em;
     margin-left: 2em;
     margin-bottom: 2em;
-    object-fit: cover.
+    object-fit: cover;
 
 }
 .fotos-beauty2 {
@@ -287,13 +297,22 @@ td{
     margin-bottom: 2em;
 }
 .zoom {
-    transition: transform .2s; 
+    transition: 1;transform: 2s; 
 }
      
 .zoom:hover {
     transform: scale(1.5); 
 }
-/* imagenes de  accesorios*/
+/* accesorios*/
+
+div .parrafo{
+    box-sizing: border-box;  
+    text-align: center;
+    padding-right: 200px;
+    padding-bottom: 30px;
+    padding-left: 200px;
+  }
+  
 .fotos-cuadradas {
     width: 200px;
     height: 200px;
@@ -336,6 +355,9 @@ td{
     margin-bottom: 2em;
 }
 /* efectos imagenes */
+.borderefect:hover {border: 2px solid rgb(0, 0, 0);
+ }
+
 .imagen:hover {
     -webkit-transform: rotateY(180deg);
     -webkit-transform-style: preserve-3d;
@@ -447,3 +469,11 @@ input#abrir-cerrar:checked + .toggle-button .abrir {
 input#abrir-cerrar:checked + .toggle-button .cerrar {
     display:block;
 }
+
+/* medias queries */
+@media (min-width: 600px) {
+    .wrapper1 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 900px) {
+    .wrapper1 { grid-template-columns: repeat(3, 1fr); }
+  }
